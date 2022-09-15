@@ -15,6 +15,7 @@ public class lição3 {
 		rcirculo = pi * raio;
 
 		System.out.printf("A = %.4f%n", rcirculo);
-	}
+sc.close();
+}
 
 }
