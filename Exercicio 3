@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class lição3 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		double pi = 3.14159;
+		double raio;
+		double rcirculo;
+
+		raio = sc.nextDouble();
+
+		raio = Math.pow(raio, 2.0);
+		rcirculo = pi * raio;
+
+		System.out.printf("A = %.4f%n", rcirculo);
+	}
+
+}
