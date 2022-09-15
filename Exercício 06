@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class lição7 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		double A, B, C, tria, circ, trap, quad, ret;
+		double pi = 3.14159;
+
+		System.out.println("Digite o primeiro numero: ");
+		A = sc.nextDouble();
+		System.out.println("Digite o segundo numero: ");
+		B = sc.nextDouble();
+		System.out.println("Digite o terceiro numero: ");
+		C = sc.nextDouble();
+
+		tria = A * C / 2.0;
+		circ = pi * C * C;
+		trap = (A + B) / 2.0 * C;
+		quad = B * B;
+		ret = A * B;
+
+		System.out.printf("\nTriangulo: %.3f%n", tria);
+		System.out.printf("Circulo: %.3f%n", circ);
+		System.out.printf("Trapezio: %.3f%n", trap);
+		System.out.printf("Quadrado: %.3f%n", quad);
+		System.out.printf("Retangulo: %.3f%n", ret);
+
+		sc.close();
+	}
+
+}
