@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class lição5 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int fun;
+		double valor, horas, resul;
+
+		System.out.println("Digite o numero do funcionario: ");
+		fun = sc.nextInt();
+
+		System.out.println("Digite seu numero de horas trabalhadas: ");
+		horas = sc.nextDouble();
+
+		System.out.println("Qual o valor que recebe por hora? ");
+		valor = sc.nextDouble();
+
+		resul = (horas * valor);
+
+		System.out.println("\nnumero = " + fun);
+		System.out.printf("salario = U$ %.2f", resul);
+
+		sc.close();
+	}
+
+}
