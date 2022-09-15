@@ -1,0 +1,36 @@
+package lição6;
+
+import java.util.Scanner;
+
+public class lição6 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int cod1, cod2, nump1, nump2;
+		double valor1, valor2, resul1, resul2, resul3;
+
+		System.out.println("Codigo da primeira peca: ");
+		cod1 = sc.nextInt();
+		System.out.println("numeros de pecas 1: ");
+		nump1 = sc.nextInt();
+		System.out.println("valor unitario de pecas 1: ");
+		valor1 = sc.nextDouble();
+
+		System.out.println("\nCodigo da segunda peca: ");
+		cod2 = sc.nextInt();
+		System.out.println("numeros de pecas 2: ");
+		nump2 = sc.nextInt();
+		System.out.println("valor unitario de pecas 2: ");
+		valor2 = sc.nextDouble();
+
+		resul1 = (double) valor1 * nump1;
+		resul2 = (double) valor2 * nump2;
+		resul3 = resul1 + resul2;
+
+		System.out.printf("\n\nValor a pagar: %.2f", resul3);
+
+		sc.close();
+	}
+
+}
