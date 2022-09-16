@@ -1,0 +1,39 @@
+package lição14;
+
+import java.util.Scanner;
+
+public class liçao {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		double x, y;
+
+		System.out.println("Digite o primeiro numero: ");
+		x = sc.nextDouble();
+
+		System.out.println("Digite o segundo numero: ");
+		y = sc.nextDouble();
+
+		if (x == 0.0 && y == 0.0) {
+			System.out.println("\nOrigem");
+		} else if (x == 0.0)
+			System.out.println("\nEixo Y");
+
+		else if (y == 0.0)
+			System.out.println("\nEixo X");
+		else if (x > 0.0 && y > 0.0) {
+			System.out.println("\nQ1");
+		} else if (x < 0.0 && y > 0.0) {
+			System.out.println("\nQ2");
+		} else if (x < 0.0 && y < 0.0) {
+			System.out.println("\nQ3");
+		} else {
+			System.out.println("\nQ4");
+		}
+		sc.close();
+
+	}
+
+}
