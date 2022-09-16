@@ -1,0 +1,38 @@
+package liçao12;
+
+import java.util.Scanner;
+
+public class liçao12 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		double cod, item, resul;
+
+		System.out.println("Digite o codigo do item que deseja: ");
+		cod = sc.nextDouble();
+
+		System.out.println("Digite a quantidade de item que deseja: ");
+		item = sc.nextDouble();
+
+		if (cod == 1) {
+			resul = item * 4.00;
+			System.out.printf("Total: %.2f", resul);
+		} else if (cod == 2) {
+			resul = item * 4.50;
+			System.out.printf("Total: %.2f", resul);
+		} else if (cod == 3) {
+			resul = item * 5.00;
+			System.out.printf("Total: %.2f", resul);
+		} else if (cod == 4) {
+			resul = item * 2.00;
+			System.out.printf("Total: %.2f", resul);
+		} else if (cod == 5) {
+			resul = item * 1.50;
+			System.out.printf("Total: %.2f", resul);
+		}
+		sc.close();
+
+	}
+
+}
